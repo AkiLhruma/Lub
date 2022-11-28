@@ -28,3 +28,23 @@ void ShowArray(string[] array)
     }
     Console.WriteLine();
 }
+
+string[] ThreeCharArray(string[] array)
+{
+    int size = 0;
+    
+    for(int i = 0; i < array.Length; i++)
+        if(array[i].Length < 4) size++;
+
+    string[] array3 = new string[size];
+    int j = 0;
+
+    for(int i = 0; i < array.Length; i++)
+        if(array[i].Length < 4)
+        { 
+            array3[j] = array[i];
+            j++;
+        }
+
+    return array3;
+}

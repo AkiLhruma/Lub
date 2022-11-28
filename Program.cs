@@ -48,3 +48,8 @@ string[] ThreeCharArray(string[] array)
 
     return array3;
 }
+
+string[] newArray = StrArray();
+ShowArray(newArray);
+string[] array3Char = ThreeCharArray(newArray);
+ShowArray(array3Char);
